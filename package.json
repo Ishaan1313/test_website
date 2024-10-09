@@ -1,0 +1,11 @@
+{
+  "name": "somename",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "open-my-html": "open-cli home.html"
+  },
+  "devDependencies": {
+    "open-cli": "^6.0.1"
+  }
+}
