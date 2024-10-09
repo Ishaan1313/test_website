@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="icon.svg" />
+
+    <meta name="google-site-verification" content="key" />
+
+    <title>corruptedarc | Home</title>
+    <meta
+      name="description"
+      content="Personal Website of corruptedarc"
+    />
+
+    <script src="https://gamerseo.com/js/app.js" defer></script>
+
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link href="https://gamerseo.com/css/fontello.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://gamerseo.com/css/services.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+    
+
+  </head>
+
+  <body>
+    <div id="bg"></div>
+    <main id="app">
+      <section id="home" class="header home">
+        <div id="nav-container" class="home">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex d-lg-none mobile-nav text-center">
+                  <ul>
+                    <li @click="toggleMenu">
+                      <a
+                        class="nav-item ) scrollactive-item"
+                        href="#home"
+                        v-smooth-scroll="{duration: 1000, offset: -90}"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li @click="toggleMenu">
+                      <a
+                        class="nav-item ) scrollactive-item"
+                        href="#about-us"
+                        v-smooth-scroll="{duration: 1000, offset: -90}"
+                      >
+                        About us
+                      </a>
+                    </li>
+                    <li @click="toggleMenu">
+                      <a
+                        class="nav-item ) scrollactive-item"
+                        href="#services"
+                        v-smooth-scroll="{duration: 1000, offset: -90}"
+                      >
+                        Services
+                      </a>
+                    </li>
+
+                    <li @click="toggleMenu">
+                      <a
+                        class="nav-item ) scrollactive-item"
+                        href="#contact"
+                        v-smooth-scroll="{duration: 1000, offset: -90}"
+                      >
+                        Quotes
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <nav class="nav d-flex justify-content-between">
+                  <div class="d-flex left-side align-items-center">
+                    <div class="burger d-lg-none">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div class="logo">
+                      <a href="/"> Corruptedarc </a>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <ul class="d-none d-lg-flex nav-links home">
+                      <li>
+                        <a
+                          class="nav-item scrollactive-item"
+                          href="#home"
+                          v-smooth-scroll="{duration: 1000, offset: -90}"
+                        >
+                          Home
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          class="nav-item scrollactive-item"
+                          href="#services"
+                          v-smooth-scroll="{duration: 1000, offset: -90}"
+                        >
+                          Services
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          class="nav-item scrollactive-item"
+                          href="#contact"
+                          v-smooth-scroll="{duration: 1000, offset: -90}"
+                        >
+                          Quotes
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="d-flex align-items-center">
+                      <li>
+                        <button class="btn btn-sm btn-login" onclick="location.href='design.html'" >Hide</button>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="hero">
+        <div class="section-wrapper">
+          <div class="section-header">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 wrapper">
+                  <h2 class="hero-title">
+                    <strong style="color: #31cd9d">Corruptedarc</strong>'s Personal Website
+                  </h2>
+                  <p class="hero-text">
+                    Welcome Ishaan
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="services">
+        <div class="section-wrapper">
+          <div class="section-header">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 wrapper">
+                  <h2>Services To be Forwarded To</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container my-5">
+            <div class="row">
+              <div class="col-md-4 service">
+                <div class="mb-3">
+                  <img
+                    class="img-fluid"
+                    src="data:image/png;base64,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"
+                    alt="Unable to Load icon"
+                  />
+                </div>
+                <div class="description">
+                  <div class="article-header mb-3">
+                    <h3 class="text-normal">
+                      <a class="title"> GitHub </a>
+                    </h3>
+                  </div>
+                  <div class="article-description mb-4">
+                    <div>
+                      <p>
+                        Forward to Corruptedarc's GitHub Page containing all the public repositories
+                      </p>
+                    </div>
+                  </div>
+                  <div class="read-more">
+                    <a href="https://github.com/Ishaan1313" style="color: #56edc3 !important">
+                      Forward
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="css-i6dzq1"
+                      >
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 service">
+                <div class="mb-3">
+                  <img
+                    class="img-fluid"
+                    src="https://i.postimg.cc/76QsKBH7/computer.png"
+                    alt="Unable to Load icon"
+                  />
+                </div>
+                <div class="description">
+                  <div class="article-header mb-3">
+                    <h3 class="text-normal">
+                      <a class="title">
+                        Programing Cheatsheet
+                      </a>
+                    </h3>
+                  </div>
+                  <div class="article-description mb-4">
+                    <div>
+                      <p>
+                        Forward to a Cheatsheet containing a details info and snippets of various programing languages and Frameworks
+                      </p>
+                    </div>
+                  </div>
+                  <div class="read-more">
+                    <a href="https://cheatsheets.zip" style="color: #69f0f7 !important">
+                      Forward
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="css-i6dzq1"
+                      >
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 service">
+                <div class="mb-3">
+                  <img
+                    class="img-fluid"
+                    src="https://i.postimg.cc/6qX0jDs8/pc.png"
+                    alt="Unable to Load Image"
+                  />
+                </div>
+                <div class="description">
+                  <div class="article-header mb-3">
+                    <h3 class="text-normal">
+                      <a class="title">
+                        Server Homepage
+                      </a>
+                    </h3>
+                  </div>
+                  <div class="article-description mb-4">
+                    <div>
+                      <p>
+                        Forward to Corruptedarc's server homepage. Server homepage holds access to all of locally hosted Services
+                      </p>
+                    </div>
+                  </div>
+                  <div class="read-more">
+                    <a
+                      href="http://phones-sells.gl.at.ply.gg:50105"
+                      style="color: #eac240 !important"
+                    >
+                      Forward
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="css-i6dzq1"
+                      >
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 service">
+                <div class="mb-3">
+                  <img
+                    class="img-fluid"
+                    src="https://img.icons8.com/?size=80&id=ObuWtTlsoTj6&format=png"
+                    alt="Unable to Load Icon"
+                  />
+                </div>
+                <div class="description">
+                  <div class="article-header mb-3">
+                    <h3 class="text-normal">
+                      <a class="title"> Archives </a>
+                    </h3>
+                  </div>
+                  <div class="article-description mb-4">
+                    <div>
+                      <p>
+                        Forward to the largest truly open library in human history with billions of free Archived documents
+                      </p>
+                    </div>
+                  </div>
+                  <div class="Forward">
+                    <a href="https://annas-archive.org" style="color: #36baea !important">
+                      Read more
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="css-i6dzq1"
+                      >
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 service">
+                <div class="mb-3">
+                  <img
+                    class="img-fluid"
+                    src="https://img.icons8.com/?size=80&id=D0A1Afld5jac&format=png"
+                    alt="Unable to load Icon"
+                  />
+                </div>
+                <div class="description">
+                  <div class="article-header mb-3">
+                    <h3 class="text-normal">
+                      <a class="title">
+                        Grafana
+                      </a>
+                    </h3>
+                  </div>
+                  <div class="article-description mb-4">
+                    <div>
+                      <p>
+                        Forward to a dashboard with visual representation of the uptime of all the hosted services
+                      </p>
+                    </div>
+                  </div>
+                  <div class="Forward">
+                    <a
+                      href="about:blank"
+                      style="color: #f485ef !important"
+                    >
+                      Read more
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="css-i6dzq1"
+                      >
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 service">
+                <div class="mb-3">
+                  <img
+                    class="img-fluid"
+                    src="https://img.icons8.com/?size=80&id=xPX4qmtKvtBp&format=png"
+                    alt="Unable to load Icon"
+                  />
+                </div>
+                <div class="description">
+                  <div class="article-header mb-3">
+                    <h3 class="text-normal">
+                      <a class="title"> Coming Soon </a>
+                    </h3>
+                  </div>
+                  <div class="article-description mb-4">
+                    <div>
+                      <p>
+                        lorem ispum
+                      </p>
+                    </div>
+                  </div>
+                  <div class="read-more">
+                    <a href="about:black" style="color: #3cb1eb !important">
+                      Forward
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="css-i6dzq1"
+                      >
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" style="background-color: #065557">
+        <div class="section-header" style="padding: 50px 0 0 0 !important">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 wrapper">
+                <h2>Quotes</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-content contact-form">
+          <div
+            class="container d-flex justify-content-center align-items-center"
+          >
+            <div>
+              <img
+                src="https://cdn3d.iconscout.com/3d/free/thumb/free-short-hair-man-with-vr-9606389-7766934.png?f=webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer">
+        <div class="section-wrapper">
+          <div class="info">
+            <div id="quote">
+              <center>
+              <br>
+              
+              <h3>   ❝ When we think we know, we cease to learn ❞</h3>
+              <br>              
+              <h3>   ❝ If it doesn't challenge you, it won't change you ❞</h3>
+              <br>              
+              <h3>   ❝ When you clearly define a problem, half the problem is solved ❞</h3>
+              <br>              
+              <h3>   ❝ When a broken man disappears, he returns with his best version ❞</h3>
+              <br>              
+              <h3>   ❝ Time doesn't heal anything, it just teaches us how to live with the pain ❞</h3>
+              <br>              
+              <h3>   ❝ The most dangerous prizon isn't the one with bars, but the one with illusions ❞</h3>
+              <br>              
+              <h3>   ❝ Hardwork could surpass raw talent, but talent aligned with hardwork is absolutely lethal ❞</h3>
+              <br>
+              <h3>   ❝ When you are happy, you enjoy the melody, but when you are sad, you understand the lyrics ❞</h3>
+              <br>
+              <h3>   ❝ Yesterday is history, tomorrow is a mystery, but today is a gift.....that is why it is called the present ❞</h3>
+              <br>
+              <h3>   ❝ Always have unique character like salt, it's presence is not felt, but, it's absence makes everything so tasteless ❞</h3>
+              <br>
+              <h3>   ❝ Motivation can give you a start but discipline is what matters, because a motivated man is dangerous, but a  disciplined man is deadly ❞</h3>
+              <br>
+
+              
+              </center>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
+    <script src="https://github.com/mrdoob/three.js/blob/master/src/constants.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      (function () {
+        let images = document.querySelectorAll(".service-content img");
+        let service_box = document.querySelector(".service-content");
+        for (const image of images) {
+          if (image.complete) {
+            continue;
+          }
+          image.style.opacity = 0;
+          const offsetTop = image.offsetTop;
+          const offsetLeft = image.offsetLeft;
+          const div = document.createElement("div");
+          div.classList.add("placeholder");
+          div.dataset.src = image.src;
+          const height = image.clientHeight;
+          const width = image.clientWidth;
+          div.style.left = offsetLeft + "px";
+          div.style.top = offsetTop + "px";
+          div.style.position = "absolute";
+          div.style.width = width + "px";
+          const newWidth =
+            service_box.clientWidth > width ? width : service_box.clientWidth;
+          const newHeight = (height / width) * newWidth;
+          div.style.height = newHeight + "px";
+          service_box.appendChild(div);
+          image.addEventListener("load", (e) => {
+            const images = document.querySelectorAll(
+              `.service-content img[src='${e.target.src}']`
+            );
+            images.forEach((item) => {
+              item.style.opacity = 1;
+            });
+            const placeholders = document.querySelectorAll(
+              `div[data-src='${e.target.src}']`
+            );
+            placeholders.forEach((item) => {
+              item.classList.add("placeholder--hidden");
+            });
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
